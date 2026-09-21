@@ -28,6 +28,9 @@ p{max-width:64ch;}
   margin:1.3rem 0; max-width:60ch; overflow-x:auto; border-radius:0 8px 8px 0;
 }
 .on-dark .equation{background:rgba(255,255,255,0.06); color:#EDE7DA; border-left-color:var(--amber);}
+.video-frame{margin:1.4rem 0 0.6rem; max-width:680px; border:1px solid rgba(32,35,31,0.12); border-radius:12px;
+  overflow:hidden; box-shadow:0 1px 3px rgba(32,35,31,0.06); background:var(--charcoal);}
+.video-frame video{display:block; width:100%; height:auto;}
 sup.cite{font-family:var(--mono); font-size:0.68em; color:var(--blue); cursor:default;}
 .source-note{font-family:var(--mono); font-size:0.76rem; color:#7A7E72;}
 

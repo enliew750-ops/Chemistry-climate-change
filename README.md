@@ -10,12 +10,15 @@ A single-page chemistry project site. No build tools, no dependencies, just thre
   reaction simulator, activity cards, CO2 chart, edit mode)
 - `earth-hero.jpg` — the Earth/greenhouse-effect image used as the hero's visual base
   (cropped and masked in CSS so just the globe and atmosphere show through)
+- `experiment-video.mp4` / `experiment-video-poster.jpg` — footage of the actual
+  experiment process, embedded in the Experiment & Results section
 
 ## Running it
 
-Just open `index.html` in a browser, or upload all four files (keeping them in the same
+Just open `index.html` in a browser, or upload all the files (keeping them in the same
 folder) to any static host — GitHub Pages, Netlify, your school's server, anywhere.
-`earth-hero.jpg` must stay next to `index.html`/`style.css` or the hero background won't load.
+`earth-hero.jpg`, `experiment-video.mp4`, and `experiment-video-poster.jpg` must stay next
+to `index.html`/`style.css` or those media won't load.
 
 ## Hero animation
 
