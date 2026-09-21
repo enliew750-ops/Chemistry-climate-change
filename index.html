@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climate Change: The Chemistry of a Warming Planet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="mainNav">
+  <a href="#home" class="brand">Climate&nbsp;<span>Chemistry</span></a>
+  <button class="navtoggle" id="navToggle" aria-label="Toggle navigation">MENU</button>
+  <div class="navlinks" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#greenhouse-effect">Greenhouse Effect</a>
+    <a href="#gases">Molecule Lab</a>
+    <a href="#human-activities">Human Activities</a>
+    <a href="#climate-change">Climate Change</a>
+    <a href="#evidence">Evidence</a>
+    <a href="#impacts">Impacts</a>
+    <a href="#experiment">Experiment &amp; Results</a>
+    <a href="#strategies">Strategies &amp; Conclusion</a>
+    <a href="#references">References</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<div id="heroWrapper">
+<section id="hero" aria-label="Home">
+  <div id="heroStage">
+    <div class="hero-stars"></div>
+    <div class="hero-earth-layer" id="heroEarthLayer">
+      <div class="hero-earth-spin">
+        <div class="hero-earth-img" id="heroEarthImg"></div>
+      </div>
+    </div>
+    <div class="hero-earth-glow"></div>
+    <svg class="hero-radiation-svg" id="heroRadSvg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice"></svg>
+    <div id="heroMolecules"></div>
+    <div class="hero-text-scrim"></div>
+    <div class="hero-fade-overlay" id="heroFadeOverlay"></div>
+    <div class="hero-text">
+      <span class="kicker">A CHEMISTRY INVESTIGATION</span>
+      <h1 data-editable data-edit-id="hero-h1">CLIMATE CHANGE</h1>
+      <h2 class="sub-hero">The Chemistry of a Warming Planet</h2>
+      <p class="lede" data-editable data-edit-id="hero-lede">Explore the molecules, reactions, and processes
+      behind the greenhouse effect.</p>
+      <a href="#home-intro" class="hero-cta">EXPLORE THE SCIENCE ↓</a>
+    </div>
+  </div>
+</section>
+</div>
+
+<!-- ================= HOME INTRO ================= -->
+<section id="home-intro" class="bg-ivory">
+  <div class="wrap col">
+    <span class="section-num">01 · Introduction</span>
+    <h2 class="title" data-editable data-edit-id="intro-title">Why a warming planet comes down to chemistry</h2>
+    <p style="margin-top:1.4rem;" class="dim" data-editable data-edit-id="intro-body">
+      People usually talk about climate change through weather and disaster: heatwaves, floods, melting ice.
+      But the actual cause sits at a much smaller scale. Certain gases, shaped a certain way, absorb certain
+      wavelengths of infrared light. That's really the whole mechanism, once you strip away the headlines.
+      This project follows that idea from atoms up to atmosphere: what the chemistry of the greenhouse effect
+      actually is, which human activities are pushing it further, what evidence shows the climate is changing,
+      and a hands-on experiment that tries to model a small piece of it.
+    </p>
+    <div class="card" style="margin-top:2rem; border-left:3px solid var(--amber); max-width:62ch;">
+      <span class="source-note" style="color:var(--amber); font-family:var(--mono);">CORE QUESTION</span>
+      <p data-editable data-edit-id="key-question" style="font-family:var(--serif); font-size:1.25rem; margin-top:0.6rem; max-width:none;">
+      How do greenhouse gases contribute to climate change, what human activities increase their concentrations,
+      and how can their effects be reduced?</p>
+    </div>
+    <div style="display:flex; flex-wrap:wrap; gap:2rem; margin-top:2.6rem; font-family:var(--mono); font-size:0.76rem; color:#7A7E72;">
+      <span>James · Research Lead</span><span>Rachel · Experiment Lead</span><span>Drey · Data &amp; Safety Recorder</span>
+      <span>Charm · Script &amp; Content Writer</span><span>Karen · Editor/Designer</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 2. GREENHOUSE EFFECT ================= -->
+<section id="greenhouse-effect" class="bg-sand">
+  <div class="wrap">
+    <div class="section-head col">
+      <span class="section-num">02 · The Greenhouse Effect</span>
+      <h2 class="title">The Greenhouse Effect</h2>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <h3 class="sub">A natural process, not a flaw</h3>
+        <p>The greenhouse effect is what keeps Earth warm enough for life to exist at all. Certain gases in the
+        atmosphere absorb thermal infrared radiation coming off Earth's surface, then re-emit it in random
+        directions, including back down toward the surface. That slows how fast heat actually leaves the
+        planet.<sup class="cite">NASA, 2024</sup></p>
+        <p style="margin-top:1rem;">NASA puts Earth's average surface temperature at around 15°C because of
+        this. Without any greenhouse gases, it would sit closer to <span class="formula">−18°C</span>, too cold
+        for liquid water to exist across most of the surface.<sup class="cite">NASA, 2024</sup></p>
+      </div>
+      <div>
+        <h4 class="minor">The energy pathway</h4>
+        <div class="chain">
+          <span class="node">Solar radiation</span><span class="arrow">→</span>
+          <span class="node">Earth's surface warms</span><span class="arrow">→</span>
+          <span class="node">Thermal infrared emitted</span><span class="arrow">→</span>
+          <span class="node">Greenhouse gases absorb</span><span class="arrow">→</span>
+          <span class="node">Re-emitted in all directions</span><span class="arrow">→</span>
+          <span class="node">Slower loss to space</span>
+        </div>
+        <p class="dim" style="font-size:0.94rem;">Six steps, on repeat: sunlight enters, the surface absorbs it
+        and warms, the surface releases infrared radiation, greenhouse gas molecules catch some of it, that
+        energy gets re-emitted in different directions, and overall, heat leaves the planet more slowly than
+        it would without those gases in the way.</p>
+      </div>
+    </div>
+
+    <h3 class="sub">The model: how gas concentration changes the outcome</h3>
+    <p class="dim">Drag the slider to change how many greenhouse-gas molecules are in the atmosphere, and watch
+    how many outgoing infrared paths get intercepted and sent back down.</p>
+
+    <div class="gh-model">
+      <div class="gh-zones">
+        <div class="gh-zone-label">SPACE</div>
+      </div>
+      <svg id="ghSvg" viewBox="0 0 720 340"></svg>
+      <div class="gh-zones">
+        <div class="gh-zone-label">EARTH</div>
+      </div>
+      <div class="gh-controls">
+        <label for="ghSlider">ATMOSPHERIC GREENHOUSE GASES &nbsp; LOW ───────────●─────────── HIGH</label>
+        <input type="range" id="ghSlider" min="0" max="100" value="35">
+        <div class="gh-readout" id="ghReadout"></div>
+      </div>
+      <div class="gh-legend">
+        <span><i class="sun"></i> Incoming sunlight</span>
+        <span><i class="ir"></i> Outgoing infrared</span>
+        <span><i class="gas"></i> Greenhouse-gas molecule</span>
+      </div>
+    </div>
+
+    <h3 class="sub">Natural vs. enhanced</h3>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Natural greenhouse effect</th><th>Enhanced greenhouse effect</th></tr>
+        <tr><td>Naturally occurring process</td><td>A stronger version of that same process</td></tr>
+        <tr><td>Maintains Earth's temperature</td><td>Adds extra warming on top</td></tr>
+        <tr><td>Greenhouse gases absorb and re-emit some outgoing infrared radiation</td>
+            <td>More gas molecules mean more outgoing infrared radiation gets absorbed and re-emitted</td></tr>
+        <tr><td>Makes Earth livable</td><td>Throws off the natural energy balance</td></tr>
+      </table>
+    </div>
+    <p style="margin-top:1.2rem; max-width:64ch;" class="dim">The mechanism is identical in both cases. What
+    changed is the strength. Human activity didn't invent a new process, it just added more greenhouse gas
+    molecules for infrared radiation to bump into.</p>
+  </div>
+</section>
+
+<!-- ================= 3. MOLECULE LAB ================= -->
+<section id="gases" class="bg-ivory">
+  <div class="wrap">
+    <div class="section-head col">
+      <span class="section-num">03 · Greenhouse Gases &amp; Their Chemistry</span>
+      <h2 class="title">Molecule Lab</h2>
+      <p style="margin-top:1rem;" class="dim">Four gases matter most here. Each one is a compound built from
+      covalent bonds, and each has a shape that happens to let it absorb infrared radiation. Pick a molecule,
+      drag it to rotate, and explore its atoms.</p>
+    </div>
+
+    <div class="mlab-tabs" id="mlabTabs">
+      <button class="mlab-tab active" data-mol="co2">CO₂</button>
+      <button class="mlab-tab" data-mol="ch4">CH₄</button>
+      <button class="mlab-tab" data-mol="n2o">N₂O</button>
+      <button class="mlab-tab" data-mol="h2o">H₂O</button>
+    </div>
+
+    <div class="mlab-stage">
+      <div class="mlab-scene" id="mlabScene" data-drag>
+        <div class="mol-rotator" id="mlabRotator"></div>
+      </div>
+      <div class="mlab-hint">drag to rotate</div>
+      <div class="mlab-btnrow">
+        <button class="mlab-btn primary" id="exploreBtn">EXPLORE MOLECULE</button>
+        <button class="mlab-btn" id="resetBtn" style="display:none;">BACK TO MOLECULE</button>
+      </div>
+      <div class="mlab-info" id="mlabInfo"></div>
+    </div>
+
+    <h3 class="sub">Chemical reaction: complete combustion of methane</h3>
+    <p class="dim">Burning methane, the main component of natural gas, converts it into carbon dioxide and
+    water. Run the reaction below to see the atoms rearrange.</p>
+
+    <div class="rx-panel">
+      <div class="rx-row rx-reactants" id="rxReactants">
+        <div class="rx-mol rx-reactant"><div class="rx-scene"><div class="mol-rotator" id="rx-ch4"></div></div><span class="rx-label">CH₄</span></div>
+        <span class="rx-plus rx-reactant-plus">+</span>
+        <div class="rx-mol rx-reactant"><div class="rx-scene"><div class="mol-rotator" id="rx-o2-1"></div></div><span class="rx-label">O₂</span></div>
+        <span class="rx-plus rx-reactant-plus">+</span>
+        <div class="rx-mol rx-reactant"><div class="rx-scene"><div class="mol-rotator" id="rx-o2-2"></div></div><span class="rx-label">O₂</span></div>
+        <span class="rx-arrow" id="rxArrow">→</span>
+        <div class="rx-mol rx-products" id="rxProducts">
+          <div class="rx-scene"><div class="mol-rotator" id="rx-co2"></div></div><span class="rx-label">CO₂</span>
+        </div>
+        <span class="rx-plus rx-products-plus" style="opacity:0;">+</span>
+        <div class="rx-mol rx-products" id="rxProducts2">
+          <div class="rx-scene"><div class="mol-rotator" id="rx-h2o-1"></div></div><span class="rx-label">2 H₂O</span>
+        </div>
+      </div>
+      <div class="rx-eq" id="rxEq">CH₄ + 2O₂ → CO₂ + 2H₂O</div>
+      <div class="rx-caption" id="rxCaption"></div>
+      <div class="rx-btnrow"><button class="mlab-btn primary" id="runReactionBtn">RUN REACTION</button></div>
+    </div>
+
+    <h3 class="sub">Comparing the four gases</h3>
+    <div class="table-wrap">
+      <table>
+        <tr><th>Gas</th><th>Formula</th><th>Structure</th><th>Main sources</th></tr>
+        <tr><td>Carbon dioxide</td><td class="formula-cell">CO₂</td><td>Linear</td><td>Fossil fuels, deforestation, industry</td></tr>
+        <tr><td>Methane</td><td class="formula-cell">CH₄</td><td>Tetrahedral</td><td>Livestock, agriculture, waste, fossil fuels</td></tr>
+        <tr><td>Nitrous oxide</td><td class="formula-cell">N₂O</td><td>Linear</td><td>Fertilisers, agricultural soils, industry</td></tr>
+        <tr><td>Water vapour</td><td class="formula-cell">H₂O</td><td>Bent</td><td>Evaporation, transpiration (climate feedback)</td></tr>
+      </table>
+    </div>
+
+    <h3 class="sub">The chemistry chain</h3>
+    <div class="chain" style="font-size:0.92rem;">
+      <span class="node">Elements</span><span class="arrow">→</span>
+      <span class="node">Covalent bonds</span><span class="arrow">→</span>
+      <span class="node">Molecular structure</span><span class="arrow">→</span>
+      <span class="node">Interaction with infrared radiation</span><span class="arrow">→</span>
+      <span class="node">Greenhouse effect</span>
+    </div>
+    <p style="max-width:64ch;" class="dim">Different shapes vibrate differently, and only some of those
+    vibrations line up with infrared wavelengths. That's why greenhouse gases can't really be swapped for one
+    another, and why even a gas present in tiny amounts, like methane or nitrous oxide, can still matter a lot.</p>
+  </div>
+</section>
+
+<!-- ================= 4. HUMAN ACTIVITIES ================= -->
+<section id="human-activities" class="bg-sand">
+  <div class="wrap">
+    <div class="section-head col">
+      <span class="section-num">04 · Human Activities</span>
+      <h2 class="title">Human Activities That Increase Greenhouse Gases</h2>
+      <p style="margin-top:1rem;" class="dim">Human activity releases CO₂, CH₄, and N₂O faster than natural
+      processes can remove them, mostly through how we make energy, use land, grow food, manufacture things,
+      and get rid of waste. Click a card to open it.</p>
+    </div>
+
+    <div class="activity-grid" id="activityGrid">
+
+      <div class="activity-card">
+        <button class="activity-head">
+          <div class="activity-icon" id="icon-fossil"></div>
+          <span class="activity-title">Fossil Fuels</span>
+          <span class="activity-toggle">+</span>
+        </button>
+        <div class="activity-body"><div class="activity-body-inner">
+          <p>Coal mostly goes toward electricity and industry. Oil gets refined into petrol, diesel, and
+          aviation fuel for transport. Natural gas, which is mostly methane, is used for heating, power, and
+          industrial processes. Combustion follows the same basic pattern each time:</p>
+          <div class="equation">Fuel + O₂ → CO₂ + H₂O + energy</div>
+          <p class="dim">The EPA lists fossil-fuel combustion for electricity, heat, and transport as the
+          single largest source of human greenhouse-gas emissions.<sup class="cite">EPA, 2025</sup></p>
+        </div></div>
+      </div>
+
+      <div class="activity-card">
+        <button class="activity-head">
+          <div class="activity-icon" id="icon-transport"></div>
+          <span class="activity-title">Transport</span>
+          <span class="activity-toggle">+</span>
+        </button>
+        <div class="activity-body"><div class="activity-body-inner">
+          <p>Cars, buses, trucks, ships, and aircraft mostly burn fossil fuels to release the energy they
+          need to move. When combustion is complete, the carbon in the fuel is oxidised into carbon dioxide.</p>
+          <div class="chain" style="margin-top:0.8rem;">
+            <span class="node">Fuel</span><span class="arrow">→</span>
+            <span class="node">Combustion</span><span class="arrow">→</span>
+            <span class="node">Energy release</span><span class="arrow">→</span>
+            <span class="node">CO₂ emissions</span>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="activity-card">
+        <button class="activity-head">
+          <div class="activity-icon" id="icon-deforest"></div>
+          <span class="activity-title">Deforestation</span>
+          <span class="activity-toggle">+</span>
+        </button>
+        <div class="activity-body"><div class="activity-body-inner">
+          <p>Forests pull CO₂ out of the air through photosynthesis and lock the carbon into biomass:</p>
+          <div class="equation">6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂</div>
+          <p>Clearing forests hits twice: fewer trees means less CO₂ removed going forward, and burning or
+          decomposing the cleared vegetation releases carbon that was already stored.</p>
+        </div></div>
+      </div>
+
+      <div class="activity-card">
+        <button class="activity-head">
+          <div class="activity-icon" id="icon-agri"></div>
+          <span class="activity-title">Agriculture</span>
+          <span class="activity-toggle">+</span>
+        </button>
+        <div class="activity-body"><div class="activity-body-inner">
+          <p>Livestock digestion and manure management release methane. Flooded rice fields create
+          oxygen-poor soil where microorganisms also produce methane. Nitrogen fertilisers add compounds to
+          soil that get transformed into nitrous oxide through the nitrogen cycle.</p>
+        </div></div>
+      </div>
+
+      <div class="activity-card">
+        <button class="activity-head">
+          <div class="activity-icon" id="icon-industry"></div>
+          <span class="activity-title">Industry &amp; Waste</span>
+          <span class="activity-toggle">+</span>
+        </button>
+        <div class="activity-body"><div class="activity-body-inner">
+          <p>Cement production is a good example of direct chemical emissions: heating limestone releases CO₂
+          as a product of the reaction itself, not just from whatever fuel was burned to heat it:</p>
+          <div class="equation">CaCO₃ → CaO + CO₂</div>
+          <p>Meanwhile, organic waste breaks down anaerobically in the deeper, oxygen-poor layers of a
+          landfill, and methane is one of the by-products.</p>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= 5. CLIMATE CHANGE ================= -->
+<section id="climate-change" class="bg-ivory">
+  <div class="wrap col">
+    <div class="section-head">
+      <span class="section-num">05 · Climate Change</span>
+      <h2 class="title">Global Warming &amp; Climate Change</h2>
+    </div>
+    <p>People use these two terms interchangeably a lot, but they aren't quite the same thing.</p>
+    <h4 class="minor">Global warming</h4>
+    <p>The long-term rise in Earth's average surface temperature, driven by a shift in the balance between
+    incoming solar energy and outgoing thermal energy.</p>
+    <h4 class="minor">Climate change</h4>
+    <p>A wider term that covers long-term shifts across the whole climate system: temperature, rainfall,
+    ocean conditions, ice cover, sea level, ecosystems. Global warming is one piece of that bigger picture.</p>
+
+    <h3 class="sub">How they connect</h3>
+    <div class="chain">
+      <span class="node">Human activities</span><span class="arrow">→</span>
+      <span class="node">↑ Greenhouse gases</span><span class="arrow">→</span>
+      <span class="node">Enhanced greenhouse effect</span><span class="arrow">→</span>
+      <span class="node">Global warming</span><span class="arrow">→</span>
+      <span class="node">Changes across the climate system</span><span class="arrow">→</span>
+      <span class="node">Climate change</span>
+    </div>
+    <p>NASA is direct about this: human activity, particularly the kind that raises greenhouse-gas levels, is
+    the dominant reason for the warming seen since the mid-20th century.<sup class="cite">NASA, 2024</sup></p>
+  </div>
+</section>
+
+<!-- ================= 6. EVIDENCE ================= -->
+<section id="evidence" class="bg-sand">
+  <div class="wrap">
+    <div class="section-head col">
+      <span class="section-num">06 · Evidence</span>
+      <h2 class="title">Evidence of Climate Change</h2>
+      <p style="margin-top:1rem;" class="dim">No single measurement proves climate change on its own. What
+      makes the case strong is that independent indicators across the atmosphere, oceans, ice, and living
+      systems all point the same direction.<sup class="cite">IPCC, 2021</sup></p>
+    </div>
+
+    <div class="grid-4">
+      <div class="card stat"><span class="num">+1.1°C</span><span class="label">GLOBAL SURFACE TEMP, 2011–2020 VS. 1850–1900</span></div>
+      <div class="card stat"><span class="num">~410 ppm</span><span class="label">ATMOSPHERIC CO₂, 2019 · HIGHEST IN 2M+ YEARS</span></div>
+      <div class="card stat"><span class="num">0.20 m</span><span class="label">SEA-LEVEL RISE, 1901–2018</span></div>
+      <div class="card stat"><span class="num">3.7 mm/yr</span><span class="label">SEA-LEVEL RISE RATE, 2006–2018, STILL SPEEDING UP</span></div>
+    </div>
+    <p class="source-note" style="margin-top:1rem;">Figures: IPCC (2021), Climate Change 2021: The Physical Science Basis</p>
+
+    <h3 class="sub">The Keeling Curve: CO₂ measured at Mauna Loa</h3>
+    <p class="dim">Atmospheric CO₂ has been measured continuously at Mauna Loa Observatory in Hawaii since 1958,
+    the longest direct record of its kind anywhere. Hover or tap a point for the value that year. Figures below
+    are annual averages derived from NOAA's published growth-rate data.<sup class="cite">NOAA GML, 2025</sup></p>
+    <div class="chart-card chart-wrap">
+      <svg id="co2Chart" viewBox="0 0 680 300" preserveAspectRatio="xMidYMid meet"></svg>
+    </div>
+    <div id="chartTooltip"></div>
+
+    <h3 class="sub">Six independent lines of evidence</h3>
+    <ul class="plain">
+      <li><strong>Temperature records</strong>: combined weather-station, ocean-buoy, and satellite data, checked against ice-core paleoclimate records.</li>
+      <li><strong>Atmospheric CO₂</strong>: direct monitoring at Mauna Loa since 1958, plus ancient air trapped in Antarctic ice cores.</li>
+      <li><strong>Glaciers &amp; ice sheets</strong>: most of the world's glaciers have been retreating since the 1950s, and the Greenland and Antarctic ice sheets are losing mass.<sup class="cite">IPCC, 2021</sup></li>
+      <li><strong>Sea level</strong>: tracked with tide gauges and satellite altimetry, rising from both thermal expansion and melting land ice.</li>
+      <li><strong>Ecosystems &amp; species</strong>: many species shifting toward the poles and to higher elevations as their suitable climate zones move.</li>
+      <li><strong>Seasonal patterns</strong>: longer growing seasons, earlier flowering, shifted migration timing, shrinking Arctic sea ice.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= 7. IMPACTS ================= -->
+<section id="impacts" class="bg-ivory">
+  <div class="wrap">
+    <div class="section-head col">
+      <span class="section-num">07 · Impacts</span>
+      <h2 class="title">Impacts of Climate Change</h2>
+      <p style="margin-top:1rem;" class="dim">These effects ripple through connected systems rather than
+      showing up one at a time. Melting ice raises sea level, warmer oceans disrupt marine life, shifting
+      rainfall hits agriculture, and extreme heat puts pressure on human communities.<sup class="cite">IPCC, 2022</sup></p>
+    </div>
+
+    <div class="system-diagram">
+      <svg viewBox="0 0 900 260" id="systemSvg"></svg>
+    </div>
+
+    <div class="grid-3" style="margin-top:2.2rem;">
+      <div class="card">
+        <h4 class="minor" style="margin-top:0;">Oceans</h4>
+        <p style="font-size:0.92rem;" class="dim">Warmer water, more frequent marine heatwaves, coral
+        bleaching, and acidification from dissolved CO₂:</p>
+        <div class="equation" style="margin-top:0.8rem; font-size:0.88rem;">CO₂ + H₂O ⇌ H₂CO₃</div>
+      </div>
+      <div class="card">
+        <h4 class="minor" style="margin-top:0;">Sea levels</h4>
+        <p style="font-size:0.92rem;" class="dim">Rising from thermal expansion of warming seawater plus
+        meltwater from glaciers and ice sheets, which raises the risk of coastal flooding and erosion.</p>
+      </div>
+      <div class="card">
+        <h4 class="minor" style="margin-top:0;">Ecosystems</h4>
+        <p style="font-size:0.92rem;" class="dim">Species shifting range, mismatched breeding and migration
+        timing, and particular strain on coral reefs and polar ecosystems that have little room to adapt.</p>
+      </div>
+      <div class="card">
+        <h4 class="minor" style="margin-top:0;">Agriculture</h4>
+        <p style="font-size:0.92rem;" class="dim">Heat and drought cut yields in some regions, heavy rainfall
+        and flooding damage crops in others, and livestock face more heat stress overall.</p>
+      </div>
+      <div class="card">
+        <h4 class="minor" style="margin-top:0;">Human communities</h4>
+        <p style="font-size:0.92rem;" class="dim">Extreme heat raises health risks, flooding damages
+        infrastructure, and exposure isn't equal. Communities with fewer resources tend to face
+        disproportionate risk.<sup class="cite">IPCC, 2022</sup></p>
+      </div>
+      <div class="card">
+        <h4 class="minor" style="margin-top:0;">Extreme weather</h4>
+        <p style="font-size:0.92rem;" class="dim">Warming shifts the conditions behind heatwaves, heavy
+        rainfall, drought, tropical cyclones, and wildfire risk, without necessarily causing any one event on
+        its own.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 8. EXPERIMENT & RESULTS ================= -->
+<section id="experiment" class="bg-sand">
+  <div class="wrap">
+    <div class="section-head col">
+      <span class="section-num">08 · Experiment &amp; Results</span>
+      <h2 class="title">Experiment &amp; Results</h2>
+      <p style="margin-top:1rem;" class="dim">Investigating the effect of carbon dioxide concentration on
+      temperature, using a simple model of the greenhouse effect.</p>
+    </div>
+
+    <div class="exp-meta">
+      <div class="card"><span class="source-note">AIM</span><p style="font-size:0.88rem; max-width:none; margin-top:0.4rem;">Test whether more CO₂ raises the temperature inside a closed container under a constant light source.</p></div>
+      <div class="card"><span class="source-note">INDEPENDENT VARIABLE</span><p style="font-size:0.88rem; max-width:none; margin-top:0.4rem;">Gas composition: normal air vs. CO₂-enriched air.</p></div>
+      <div class="card"><span class="source-note">DEPENDENT VARIABLE</span><p style="font-size:0.88rem; max-width:none; margin-top:0.4rem;">Temperature inside the container (°C).</p></div>
+      <div class="card"><span class="source-note">CONTROLLED VARIABLES</span><p style="font-size:0.88rem; max-width:none; margin-top:0.4rem;">Container, light source, distance, exposure time, starting temperature, gas volume.</p></div>
+    </div>
+
+    <div class="hypothesis-box">
+      <span class="source-note" style="color:var(--sage-dark);">HYPOTHESIS</span>
+      <p style="margin-top:0.5rem;">If the concentration of carbon dioxide inside a container goes up, the container should show a bigger
+      temperature increase than one with normal air, because CO₂ is a greenhouse gas that absorbs and
+      re-emits thermal infrared radiation.</p>
+    </div>
+
+    <h3 class="sub">Producing the CO₂</h3>
+    <p>Carbon dioxide comes from reacting sodium hydrogencarbonate (baking soda) with dilute ethanoic acid
+    (vinegar):</p>
+    <div class="equation">NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂</div>
+
+    <h3 class="sub">Method</h3>
+    <div class="steps">
+      <div class="step">Set up two identical transparent containers with temperature sensors placed the same way in each.</div>
+      <div class="step">Keep normal air in the control container, and add CO₂-enriched air to the experimental one using the vinegar and baking soda reaction.</div>
+      <div class="step">Make sure both containers start at the same temperature before sealing them.</div>
+      <div class="step">Place both containers the same distance from a lamp and switch it on at the same time.</div>
+      <div class="step">Record temperature at regular intervals (every 2 minutes, over 14 minutes).</div>
+      <div class="step">Repeat when there's time, since more trials mean more reliable results.</div>
+    </div>
+
+    <h3 class="sub">Safety</h3>
+    <ul class="plain">
+      <li>Safety goggles and lab coats worn the whole time.</li>
+      <li>Never seal the vinegar and baking soda reaction inside a rigid container, since it produces gas.</li>
+      <li>Avoid breathing in concentrated CO₂; work somewhere ventilated.</li>
+      <li>Handle the lamp carefully, it gets hot during the experiment.</li>
+    </ul>
+
+    <div class="pending-banner">
+      <span class="source-note" style="color:var(--amber);">STATUS</span>
+      <p style="max-width:60ch; margin-top:0.4rem;">Results below are from a single completed trial. As the paper's own
+      evaluation notes, one trial isn't enough to establish a strong pattern, repeating each condition and
+      averaging would make the results more reliable.</p>
+    </div>
+
+    <h3 class="sub">Results</h3>
+    <div class="table-wrap">
+      <table class="results-table">
+        <tr><th>Gas condition</th><th>Initial<br>/ °C</th><th>5 min<br>/ °C</th><th>10 min<br>/ °C</th><th>15 min<br>/ °C</th><th>Total ΔT<br>/ °C</th></tr>
+        <tr><td>Normal air</td><td>27</td><td>28</td><td>28</td><td>29</td><td>2</td></tr>
+        <tr><td>CO₂-enriched air</td><td>27</td><td>29</td><td>30</td><td>32</td><td>5</td></tr>
+      </table>
+    </div>
+    <div class="chart-card" style="margin-top:1.6rem; max-width:640px;">
+      <svg id="resultsChart" viewBox="0 0 560 320" preserveAspectRatio="xMidYMid meet"></svg>
+    </div>
+
+    <h3 class="sub">Chemistry interpretation</h3>
+    <p>Over 15 minutes, the normal-air bag warmed by 2°C while the CO₂-enriched bag warmed by 5°C, more than
+    double the temperature rise. That supports the hypothesis: with more CO₂ molecules available inside the
+    bag, more of the outgoing infrared radiation gets absorbed and re-emitted back inward instead of
+    escaping, so the bag loses heat less efficiently and its temperature climbs faster.</p>
+    <div class="chain">
+      <span class="node">CO₂ ↑</span><span class="arrow">→</span>
+      <span class="node">More IR absorbed</span><span class="arrow">→</span>
+      <span class="node">More IR re-emitted inside container</span><span class="arrow">→</span>
+      <span class="node">Slower heat loss</span><span class="arrow">→</span>
+      <span class="node">Temperature rise</span>
+    </div>
+
+    <h3 class="sub">Limitations of the model</h3>
+    <ul class="plain">
+      <li>Doesn't reproduce Earth's atmosphere, circulation, clouds, or oceans.</li>
+      <li>The lamp might transfer heat directly rather than purely through re-radiated infrared energy.</li>
+      <li>CO₂ concentration inside the container isn't measured precisely.</li>
+      <li>One trial alone isn't statistically reliable; repeating and averaging improves confidence.</li>
+    </ul>
+    <p style="margin-top:1rem; max-width:64ch;" class="dim">This experiment can show a simplified relationship
+    under controlled conditions, but it can't prove human-caused climate change by itself. Its results should
+    be read next to the wider evidence in <a href="#evidence" style="color:var(--sage-dark);">Section 06</a>, not
+    as standalone proof.</p>
+  </div>
+</section>
+
+<!-- ================= 9. STRATEGIES & CONCLUSION ================= -->
+<section id="strategies" class="bg-ivory">
+  <div class="wrap">
+    <div class="section-head col">
+      <span class="section-num">09 · Strategies &amp; Conclusion</span>
+      <h2 class="title">Strategies &amp; Conclusion</h2>
+      <p style="margin-top:1rem;" class="dim">Cutting emissions takes coordinated change across energy,
+      transport, forests, agriculture, and industry. No single strategy gets it done alone.<sup class="cite">IPCC, 2022</sup></p>
+    </div>
+
+    <div class="grid-3">
+      <div class="strategy-card">
+        <div class="strategy-icon" id="si-energy"></div>
+        <h4>Energy</h4>
+        <ul class="plain"><li>Solar, wind, hydro, and geothermal replace fossil combustion</li><li>Energy efficiency lowers demand everywhere</li><li>Needs storage and grid upgrades to handle variability</li></ul>
+      </div>
+      <div class="strategy-card">
+        <div class="strategy-icon" id="si-transport"></div>
+        <h4>Transport</h4>
+        <ul class="plain"><li>Public transport cuts emissions per passenger</li><li>Electric vehicles have no tailpipe CO₂</li><li>How clean it really is depends on the electricity source</li></ul>
+      </div>
+      <div class="strategy-card">
+        <div class="strategy-icon" id="si-forests"></div>
+        <h4>Forests</h4>
+        <ul class="plain"><li>Stopping deforestation protects existing carbon stores</li><li>Reforestation pulls CO₂ out as trees grow</li><li>Carbon storage takes years to build up</li></ul>
+      </div>
+      <div class="strategy-card">
+        <div class="strategy-icon" id="si-agri"></div>
+        <h4>Agriculture</h4>
+        <ul class="plain"><li>Better livestock and manure management cuts CH₄</li><li>More precise fertiliser use cuts N₂O</li><li>Has to balance emissions cuts with feeding people</li></ul>
+      </div>
+      <div class="strategy-card">
+        <div class="strategy-icon" id="si-industry"></div>
+        <h4>Industry</h4>
+        <ul class="plain"><li>Electrification and low-emission energy sources</li><li>Efficiency gains in heating and machinery</li><li>Carbon capture for emissions that are hard to avoid</li></ul>
+      </div>
+      <div class="strategy-card">
+        <span class="source-note">OVERALL</span>
+        <h4 style="margin-top:0.5rem;">No single fix</h4>
+        <p style="font-size:0.9rem;" class="dim">The IPCC finds mitigation options across every major sector,
+        many of them ready to deploy soon, but how well they work depends on scale, speed, funding, and
+        whether they actually get coordinated.<sup class="cite">IPCC, 2022</sup></p>
+      </div>
+    </div>
+
+    <h3 class="sub">Conclusion</h3>
+    <p style="max-width:66ch;">Greenhouse gases warm the planet because of their molecular structure. Their
+    covalent bonds and shapes let them absorb and re-emit infrared radiation. Human activity has clearly
+    raised the concentration of CO₂, CH₄, and N₂O since industrialisation began, turning a natural process
+    into one that's now shifting Earth's energy balance. Independent evidence, temperature records,
+    atmospheric CO₂ measurements, glacier retreat, sea-level rise, and ecosystem shifts, all point to the
+    same conclusion: the climate is changing, and human greenhouse-gas emissions are the main reason since
+    the mid-20th century.<sup class="cite">IPCC, 2021</sup></p>
+    <p style="max-width:66ch; margin-top:1rem;">The experiment in Section 08 tests one small piece of that
+    chain directly: whether raising CO₂ concentration in a sealed, lit container produces a measurable
+    temperature increase. It does, the CO₂-enriched bag warmed more than twice as much as the normal-air
+    control over the same 15 minutes. Read alongside the broader evidence above, that result isn't standalone
+    proof, but it is a hands-on look at a mechanism that plays out at planetary scale.</p>
+
+    <div class="big-chain" style="margin-top:2rem;">
+      <b>Human activity</b> → greenhouse gas emissions → atmospheric change →<br>
+      <b>enhanced greenhouse effect</b> → global warming → climate change →<br>
+      environmental &amp; human impacts → <b>mitigation strategies</b>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REFERENCES ================= -->
+<section id="references" class="bg-sand">
+  <div class="wrap col">
+    <div class="section-head">
+      <span class="section-num">References</span>
+      <h2 class="title">Sources</h2>
+      <p style="margin-top:1rem;" class="dim">Cited in Harvard style, linked to the sections they support.</p>
+    </div>
+    <div class="ref-list">
+      <div class="ref-item">NASA (2024) <em>What is the greenhouse effect?</em> NASA Science. Available at: <a href="https://science.nasa.gov/climate-change/faq/what-is-the-greenhouse-effect/" target="_blank" rel="noopener">science.nasa.gov</a><span class="ref-meta">Used in: Greenhouse Effect, Molecule Lab, Climate Change</span></div>
+      <div class="ref-item">NASA (2024) <em>Evidence.</em> NASA Science. Available at: <a href="https://science.nasa.gov/climate-change/evidence/" target="_blank" rel="noopener">science.nasa.gov</a><span class="ref-meta">Used in: Evidence</span></div>
+      <div class="ref-item">NASA (2024) <em>Causes.</em> NASA Science. Available at: <a href="https://science.nasa.gov/climate-change/causes/" target="_blank" rel="noopener">science.nasa.gov</a><span class="ref-meta">Used in: Human Activities, Climate Change</span></div>
+      <div class="ref-item">IPCC (2021) <em>Climate Change 2021: The Physical Science Basis — Summary for Policymakers.</em> Available at: <a href="https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/" target="_blank" rel="noopener">ipcc.ch</a><span class="ref-meta">Used in: Evidence, Climate Change, Conclusion</span></div>
+      <div class="ref-item">IPCC (2022) <em>Climate Change 2022: Impacts, Adaptation and Vulnerability.</em> Available at: <a href="https://www.ipcc.ch/report/ar6/wg2/" target="_blank" rel="noopener">ipcc.ch</a><span class="ref-meta">Used in: Impacts</span></div>
+      <div class="ref-item">IPCC (2022) <em>Climate Change 2022: Mitigation of Climate Change.</em> Available at: <a href="https://www.ipcc.ch/report/ar6/wg3/" target="_blank" rel="noopener">ipcc.ch</a><span class="ref-meta">Used in: Strategies</span></div>
+      <div class="ref-item">NOAA Global Monitoring Laboratory (2025) <em>Trends in Atmospheric Carbon Dioxide, Mauna Loa Observatory.</em> Available at: <a href="https://gml.noaa.gov/ccgg/trends/" target="_blank" rel="noopener">gml.noaa.gov</a><span class="ref-meta">Used in: Evidence (CO₂ chart)</span></div>
+      <div class="ref-item">NOAA Global Monitoring Laboratory (2025) <em>Annual Mean Growth Rate for Mauna Loa, Hawaii.</em> Available at: <a href="https://gml.noaa.gov/ccgg/trends/gr.html" target="_blank" rel="noopener">gml.noaa.gov</a><span class="ref-meta">Used in: Evidence (CO₂ chart figures, calculated from this growth-rate data)</span></div>
+      <div class="ref-item">U.S. Environmental Protection Agency (2025) <em>Global Greenhouse Gas Overview.</em> Available at: <a href="https://www.epa.gov/ghgemissions/global-greenhouse-gas-overview" target="_blank" rel="noopener">epa.gov</a><span class="ref-meta">Used in: Molecule Lab, Human Activities</span></div>
+      <div class="ref-item">U.S. Environmental Protection Agency (2025) <em>Methane Emissions.</em> Available at: <a href="https://www.epa.gov/ghgemissions/methane-emissions" target="_blank" rel="noopener">epa.gov</a><span class="ref-meta">Used in: Molecule Lab, Strategies</span></div>
+      <div class="ref-item">U.S. Environmental Protection Agency (2025) <em>Nitrous Oxide Emissions.</em> Available at: <a href="https://www.epa.gov/ghgemissions/nitrous-oxide-emissions" target="_blank" rel="noopener">epa.gov</a><span class="ref-meta">Used in: Molecule Lab</span></div>
+      <div class="ref-item">Cambridge International (2026) <em>Cambridge IGCSE Chemistry 0620 Syllabus, 2026–2028.</em> Available at: <a href="https://www.cambridgeinternational.org/Images/697205-2026-2028-syllabus.pdf" target="_blank" rel="noopener">cambridgeinternational.org</a><span class="ref-meta">Used in: Molecule Lab</span></div>
+      <div class="ref-item">Food and Agriculture Organization of the United Nations (2023) <em>Methane emissions in livestock.</em> Available at: <a href="https://www.fao.org/interactive/livestock-methane/en/" target="_blank" rel="noopener">fao.org</a><span class="ref-meta">Used in: Strategies</span></div>
+      <div class="ref-item">American Chemical Society (2026) 'Lesson 6.2: Controlling the Amount of Products in a Chemical Reaction', <em>Middle School Chemistry.</em> Available at: <a href="https://www.acs.org/middleschoolchemistry/lessonplans/chapter6/lesson2.html" target="_blank" rel="noopener">acs.org</a><span class="ref-meta">Used in: Experiment</span></div>
+      <div class="ref-item">Lanni, L.M. (2014) 'Filling a Plastic Bag with Carbon Dioxide: A Student-Designed Guided-Inquiry Lab for Advanced Placement and College Chemistry Courses', <em>Journal of Chemical Education</em>, 91(9), pp. 1390–1392. Available at: <a href="https://eric.ed.gov/?id=EJ1040114" target="_blank" rel="noopener">eric.ed.gov</a><span class="ref-meta">Used in: Experiment</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <span>CLIMATE CHANGE: THE CHEMISTRY OF A WARMING PLANET · GRADE 9 CHEMISTRY PROJECT</span>
+  </div>
+</footer>
+
+<div id="editPanel">
+  <span class="ep-title">EDIT MODE</span>
+  <button id="saveEditsBtn">Save changes (this browser)</button>
+  <button id="downloadEditsBtn">Download edited site</button>
+  <button id="exitEditsBtn" class="warn">Exit edit mode</button>
+  <p>Edits save to this browser only. To publish them for visitors, download the updated file and replace
+  the one on your site. Regular visitors never see this panel.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
